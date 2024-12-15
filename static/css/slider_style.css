@@ -1,0 +1,55 @@
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 60px;
+    height: 30px;
+    border-radius: 30px;
+    background: #ccc;
+    outline: none;
+    transition: background 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #000;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    transition: left 0.3s;
+}
+
+.slider:checked {
+    background: #4CAF50;
+}
+
+.slider:checked::before {
+    left: 33px;
+}
+
+.slider-label {
+    font-size: 20px;
+    color: #333;
+}
+
+.theme-toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.slider-label {
+    color: #ffffff;
+    font-size: 14px;
+}

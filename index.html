@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/custom.css">
+    <link rel="stylesheet" href="static/css/slider_style.css">
+
+    <link id="theme-style" rel="stylesheet" href="static/css/light_theme.css">
+</head>
+
+<body>
+<section class="promo dark-bg pt-2 pb-5">
+    <div class="container">
+        <!-- Навигационная панель с логотипом и кнопкой -->
+        <nav class="navbar navbar-expand-lg mb-5 navbar-dark">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand logo d-flex align-items-center text-decoration-none">
+                    <div class="logo-left pe-2">
+                        <img src="static/my_photo.jpg" alt="photo"
+                             style="border-radius: 60%; width: 70px; height: 70px;">
+                    </div>
+                    <div class="logo-right" style="margin-left: 6px;">
+                        <div class="logo-title link-purple" data-translate="name"></div>
+                        <div class="logo-subtitle text-yellow" data-translate="kredo"></div>
+                    </div>
+                </a>
+
+                <!-- Кнопка для раскрытия меню на мобильных устройствах -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Меню навигации -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav m-auto">
+                        <li class="nav-item mx-3">
+                            <a href="#story" class="nav-link link-purple link-border-bottom" data-translate="about"></a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#education" class="nav-link link-purple link-border-bottom"
+                               data-translate="education"></a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#projects" class="nav-link link-purple link-border-bottom"
+                               data-translate="projects"></a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#contact" class="nav-link link-purple link-border-bottom"
+                               data-translate="contact"></a>
+                        </li>
+                    </ul>
+                    <ul class="nav ml-auto">
+                        <li class="nav-item mx-3">
+                            <a href="https://github.com/Tasher239" class="nav-link link-purple link-border-bottom">Github</a>
+                        </li>
+                        <li class="nav-item mx-3 mr-0">
+                            <a href="#contact" class="nav-link link-purple link-border-bottom"
+                               data-translate="mail_me"></a>
+                        </li>
+                        <li class="nav-item mx-3 mr-0">
+                            <div id="theme-toggle-container"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Блок приветствия с основной информацией -->
+        <div class="row py-0 py-sm-5">
+            <div class="col-12 col-lg-8 offset-lg-2 mb-0 mb-sm-5 py-5">
+                <h1 class="h1 font-weight-bold font greeting-text text-blue strikethrough"
+                    data-translate='mem_info'></h1>
+                <h1 class="h1 font-weight-bold font greeting-text text-blue" data-translate='greeting'></h1>
+                <p class="promo-text pb-3" data-translate='greeting_info'></p>
+                <a href="#contact" class="btn text-center" style="background-color: #DCFF05; color: #102D69"
+                   data-translate='mail_me'></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Переключатель языков -->
+<div class="language-toggle">
+    <a href="#" id="lang-en" class="active">EN</a> |
+    <a href="#" id="lang-ru">RU</a>
+</div>
+
+
+<!-- Секция "Обо мне" -->
+<section class="story container py-5 text-center" id="story">
+    <h2 class="h1 font-weight-bold mt-4 mb-3 mb-sm-5 pb-3 navigo-font" data-translate='about'></h2>
+    <div class="row">
+        <div class="col-12 col-sm-9 offset-sm-2 px-2 pb-5">
+            <p class="font-weight-bold pb-4" data-translate='about_info'></p>
+        </div>
+    </div>
+</section>
+
+<!-- Секция образования -->
+<section class="education dark-bg pt-3 pt-sm-5 pb-3" id="education">
+    <div class="container">
+        <h2 class="h1 font-weight-bold text-center mt-4 mt-sm-2 mb-0 mb-sm-4 pb-2 navigo-font"
+            data-translate='education'></h2>
+        <div class="work-experience text-white">
+            <div class="d-flex align-items-center mb-2">
+                <img src="static/01_Logo_HSE_full_rus_PANTONE_for_dark_2.png" alt="HSE Logo" class="me-3"
+                     style="height: 60px; margin-top: -6px;">
+                <div class="d-flex flex-column justify-content-center">
+                    <h3 class="h4 mb-1" data-translate='hse_university'></h3>
+                    <p class="text-white-40 mb-0" data-translate='hse_grad_date'></p>
+                </div>
+            </div>
+            <div class="position mb-4" style="margin-left: 20px;">
+                <h4 class="h5 text-purple" data-translate='hse_status'></h4>
+                <p style="margin-bottom: 50px;" data-translate='hse_working'></p>
+            </div>
+            <div class="d-flex align-items-center mb-4">
+                <img src="static/liceum_logo.jpg" alt="HSE Logo" class="me-3"
+                     style="border-radius: 60%; width: 70px; height: 70px;">
+                <div class="d-flex flex-column justify-content-center">
+                    <h3 class="h4 mb-1" data-translate='school'></h3>
+                    <p class="text-white-40 mb-0" data-translate='school_grad_date'></p>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- Секция проектов -->
+<section class="projects pt-3 pt-sm-5 pb-3" id="projects">
+    <div class="container">
+        <h2 class="h1 font-weight-bold text-center mt-4 mt-sm-2 mb-0 mb-sm-4 pb-2 navigo-font"
+            data-translate='projects'></h2>
+        <div class="projects">
+            <!-- 1 проект -->
+            <div class="mb-4">
+                <div class="d-flex align-items-center">
+              <span class="pr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+                </svg>
+              </span>
+                    <h3 class="h4 mb-0">
+                        <a href="https://github.com/Tasher239/LISA" class="text-link">LISA | Python</a>
+                    </h3>
+                </div>
+                <p class="mt-2 mb-0" data-translate='LISA_info'></p>
+            </div>
+            <!-- 2 проект -->
+            <div class="mb-4">
+                <div class="d-flex align-items-center">
+              <span class="pr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+                </svg>
+              </span>
+                    <h3 class="h4 mb-0">
+                        <a href="https://github.com/Tasher239/ImageProcessor" class="text-link">Image processor |
+                            C++</a>
+                    </h3>
+                </div>
+                <p class="mt-2 mb-0" data-translate='image_processor_info'></p>
+            </div>
+            <!-- 3 проект -->
+            <div class="mb-4">
+                <div class="d-flex align-items-center">
+              <span class="pr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+                </svg>
+              </span>
+                    <h3 class="h4 mb-0">
+                        <a href="https://github.com/Tasher239/Stellayger" class="text-link">Stellayger | C#</a>
+                    </h3>
+                </div>
+                <p class="mt-2 mb-0" data-translate='stellayger_info'></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="goals dark-bg pt-3 pt-sm-3 pb-3" id="skills">
+    <div class="container">
+        <h2 class="h2 font-weight-bold my-4" data-translate='skills'></h2>
+        <div class="row">
+            <div class="col-12 col-sm-8 pb-1">
+                <ul class="list-unstyled mb-4">
+                    <li class="d-flex align-items-center align-content-start m-2" style="line-height: 24px;">
+              <span class="pr-1">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="white"><path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+              </span>
+                        <span>Python, C++, C, Assembly</span>
+                    </li>
+                    <li class="d-flex align-items-center align-content-start m-2" style="line-height: 24px;">
+              <span class="pr-1">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="white"><path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+              </span>
+                        <span data-translate='skills_info'></span>
+                    </li>
+                    <li class="d-flex align-items-center align-content-start m-2" style="line-height: 24px;">
+              <span class="pr-1">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="white"><path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+              </span>
+                        <span>LaTex, Excel, PhotoShop</span>
+                    </li>
+                </ul>
+            </div>
+</section>
+
+
+<!-- Секция контактов -->
+<section class="goals container mb-5 pb-sm-5 pb-0" id="contact">
+    <h2 class="h2 font-weight-bold my-4" data-translate='contact'></h2>
+    <div class="row">
+        <div class="row">
+            <div class="col-12 col-sm-9">
+                <p class="d-flex justify-content-start gap-2 flex-wrap">
+                    <a href="https://t.me/dastroo" class="btn mb-3" style="background-color: #DCFF05; color: #102D69"
+                       target="_blank" data-translate='write_tg'></a>
+                    <a href="https://example.com/" class="btn mb-3" style="background-color: #DCFF05; color: #102D69"
+                       target="_blank" data-translate='view_resume'></a>
+                    <a href="mailto:dikostin@edu.hse.ru" class="btn mb-3"
+                       style="background-color: #DCFF05; color: #102D69" target="_blank" data-translate='email'></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Подвал сайта с темным фоном -->
+<footer class="footer dark-bg">
+    <nav class="container navbar ">
+        <ul class="nav m-auto py-2">
+            <li class="nav-item mx-3" data-translate='footer_info'></li>
+        </ul>
+    </nav>
+</footer>
+
+<!--&lt;!&ndash; Подключение скрипта для переключения темы &ndash;&gt;-->
+<!--<script src="/static/js/theme_toggle.js"></script>-->
+
+<!--&lt;!&ndash;&lt;!&ndash; Подключение скрипта для переключения языка &ndash;&gt;&ndash;&gt;-->
+<!--<script src="/tasher239.github.io/static/js/language_toggle.js"></script>-->
+
+
+<!--&lt;!&ndash; Подключение скрипта для переключения темы &ndash;&gt;-->
+<script>
+    const themeStyle = document.getElementById('theme-style');
+    const currentTheme = localStorage.getItem('theme') || 'light';
+
+    function applyTheme(theme) {
+        themeStyle.href = theme === 'dark' ? 'static/css/dark_theme.css' : 'static/css/light_theme.css';
+        localStorage.setItem('theme', theme);
+    }
+
+    applyTheme(currentTheme);
+
+    document.getElementById('theme-toggle-container').innerHTML = `
+        <div class="theme-toggle-container">
+            <span class="slider-label" data-translate='theme_light'></span>
+            <input type="checkbox" class="slider" id="theme_toggle">
+            <span class="slider-label" data-translate='theme_dark'></span>
+        </div>
+    `;
+
+    const themeToggle = document.getElementById('theme_toggle');
+    themeToggle.checked = currentTheme === 'dark';
+
+    themeToggle.addEventListener('change', () => {
+        const newTheme = themeToggle.checked ? 'dark' : 'light';
+        applyTheme(newTheme);
+    });
+</script>
+
+<!-- Скрипт для переключения языка -->
+<script>
+    const translations = {
+        ru: {
+            name: "Даниил Костин",
+            kredo: "Ресерчер жизни",
+            about: "Обо мне",
+            education: "Образование",
+            projects: "Проекты",
+            contact: "Контакты",
+            mail_me: "Написать мне",
+            mem_info: "Зовут дядя Вова. Занимаюсь борьбой!",
+            greeting: "Доброе утро, добрый день, добрый вечер! Меня зовут Даниил",
+            greeting_info: "Я - профессиональный квадробер 🦥 Занимаюсь хоббихорсингом, делаю лабы по матану (всем звуук) и иногда, пока жду свой карамельный фраппучино на кокосовом молоке, пишу код на Python",
+            about_info: "Я — обычный студент, который любит программирование, математику и хоббихорсинг. В свободное время я занимаюсь спортом, читаю книги и смотрю фильмы. Моя цель — стать профессионалом в области машинного обучения и искусственного интеллекта (таким меня видит GitHub Copilot — в целом, звучит правдеподобно, я в это верю)",
+            hse_university: "Национальный исследовательский университет «Высшая школа экономики», Москва",
+            hse_grad_date: "Бакалавриат, 2023-2027",
+            hse_status: "Студент",
+            hse_working: "Занимаюсь изучением математики и программирования",
+            school: "Президентский физико-математический лицей №239, Санкт-Петербург",
+            school_grad_date: "Среднее общее образование, 2020-2023",
+            LISA_info: "Чат-бот, предоставляющий пользователям безопасный доступ к ресурсам сети Интернет через VPN. Бот разработан для автоматизации взаимодействия с VPN-сервисом, предоставления ключей доступа, управления подписками и анализа статистики использования. Взаимодействие осуществляется через мессенджер Telegram.",
+            image_processor_info: "Создание консольного приложения для применения фильтров различного типа (размытие по Гауссу, обрезание, негатив) к изображению.",
+            stellayger_info: "Создание десктопной игры на Unity, позволяющей запоминать созвездия неба. Управляя ракетой, необходимо облететь все звезды и построить необходимую фигуру.",
+            skills: "Технические навыки",
+            skills_info: "Алгоритмы и структуры данных, математический анализ, линейная алгебра и геометрия",
+            write_tg: "Написать в Telegram",
+            email: "Написать на почту",
+            view_resume: "Посмотреть резюме",
+            footer_info: "Cделано с ожиданием 2025 года",
+            theme_light: "Светлая",
+            theme_dark: "Тёмная",
+            not_found: "Ничего не нашлось! Вот неудача, отправляйтесь на главную!"
+        },
+        en: {
+            name: "Daniel Kostin",
+            kredo: "Life researcher",
+            about: "About me",
+            education: "Education",
+            projects: "Projects",
+            contact: "Contacts",
+            mail_me: "Mail me",
+            mem_info: "My name is Uncle Vova. I do wrestling!",
+            greeting: "Good morning, good afternoon, good evening! My name is Daniel",
+            greeting_info: "I’m a professional quadrober 🦥 I do hobby horsing, work on calculus assignments (everyone scream!), and sometimes, while waiting for my caramel frappuccino with coconut milk, I write Python code.",
+            about_info: "I’m just an ordinary student who loves programming, math, and hobby horsing. In my free time, I do sports, read books, and watch movies. My goal is to become a professional in the field of machine learning and artificial intelligence. (This is how GitHub Copilot sees me — overall, it sounds plausible, and I believe it.)",
+            hse_university: "National Research University «Higher School of Economics», Moscow",
+            hse_grad_date: "Bachelor's Degree, 2023–2027",
+            hse_status: "Student",
+            hse_working: "Studying mathematics and programming",
+            school: "Presidential Physics and Mathematics Lyceum No. 239, Saint Petersburg",
+            school_grad_date: "Secondary General Education, 2020–2023",
+            LISA_info: "A chatbot that provides users with secure access to internet resources through VPN. The bot is designed to automate interaction with the VPN service, provide access keys, manage subscriptions, and analyze usage statistics. Interaction is done through the Telegram messenger.",
+            image_processor_info: "Creating a console application to apply various types of filters (Gaussian blur, cropping, negative) to an image.",
+            stellayger_info: "Creating a desktop game in Unity that helps memorize constellations in the sky. By controlling a rocket, players must fly around all the stars and form the required shape.",
+            skills: "Technical Skills",
+            skills_info: "Algorithms and Data Structures, Mathematical Analysis, Linear Algebra and Geometry",
+            write_tg: "Write in Telegram",
+            email: "Email",
+            view_resume: "View resume",
+            footer_info: "Made with the expectation of 2025",
+            theme_light: "Light",
+            theme_dark: "Dark",
+            not_found: "Nothing found! What a failure, go back to the main page!"
+        }
+    };
+
+
+        const currentLang = localStorage.getItem('lang') || 'en';
+
+        function applyTranslations(lang) {
+            document.querySelectorAll('[data-translate]').forEach(el => {
+                const key = el.getAttribute('data-translate');
+                el.textContent = translations[lang][key];
+            });
+            localStorage.setItem('lang', lang);
+        }
+
+        document.getElementById('lang-en').addEventListener('click', () => applyTranslations('en'));
+        document.getElementById('lang-ru').addEventListener('click', () => applyTranslations('ru'));
+
+        applyTranslations(currentLang);
+</script>
+
+<script>
+function setActiveLanguage(lang) {
+    document.querySelectorAll('.language-toggle a').forEach(el => {
+        el.classList.remove('active');
+    });
+    document.getElementById(`lang-${lang}`).classList.add('active');
+}
+
+document.getElementById('lang-en').addEventListener('click', () => {
+    applyTranslations('en');
+    setActiveLanguage('en');
+});
+
+document.getElementById('lang-ru').addEventListener('click', () => {
+    applyTranslations('ru');
+    setActiveLanguage('ru');
+});
+
+// Устанавливаем активный язык при загрузке
+setActiveLanguage(localStorage.getItem('lang') || 'en');
+
+</script>
+
+
+<!-- Подключение Bootstrap скрипта -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
