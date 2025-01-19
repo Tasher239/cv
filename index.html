@@ -13,10 +13,10 @@
 </head>
 
 <body>
-<section class="promo dark-bg pt-2 pb-5">
+<section class="promo dark-bg pt-2 pb-2">
     <div class="container">
         <!-- Навигационная панель с логотипом и кнопкой -->
-        <nav class="navbar navbar-expand-lg mb-5 navbar-dark">
+        <nav class="navbar navbar-expand-lg mb-1 navbar-dark">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand logo d-flex align-items-center text-decoration-none">
                     <div class="logo-left pe-2">
@@ -72,7 +72,7 @@
 
 
         <!-- Блок приветствия с основной информацией -->
-        <div class="row py-0 py-sm-5">
+        <div class="row py-0 py-sm-3">
             <div class="col-12 col-lg-8 offset-lg-2 mb-0 mb-sm-5 py-5">
                 <h1 class="h1 font-weight-bold font greeting-text text-blue" data-translate='greeting'></h1>
                 <p class="promo-text pb-3" data-translate='greeting_info'></p>
@@ -293,7 +293,7 @@
 <!--<script src="/tasher239.github.io/static/js/language_toggle.js"></script>-->
 
 
-<!--&lt;!&ndash; Подключение скрипта для переключения темы &ndash;&gt;-->
+<!-- Подключение скрипта для переключения темы -->
 <script>
     const themeStyle = document.getElementById('theme-style');
     const currentTheme = localStorage.getItem('theme') || 'light';
@@ -306,12 +306,15 @@
     applyTheme(currentTheme);
 
     document.getElementById('theme-toggle-container').innerHTML = `
-        <div class="theme-toggle-container">
-            <span class="slider-label" data-translate='theme_light'></span>
-            <input type="checkbox" class="slider" id="theme_toggle">
-            <span class="slider-label" data-translate='theme_dark'></span>
-        </div>
-    `;
+    <div class="theme-toggle-container">
+        <span class="slider-label" data-translate='theme_light'>Light</span>
+        <label class="slider">
+            <input type="checkbox" id="theme_toggle">
+            <span class="slider-background"></span>
+        </label>
+        <span class="slider-label" data-translate='theme_dark'>Dark</span>
+    </div>
+`;
 
     const themeToggle = document.getElementById('theme_toggle');
     themeToggle.checked = currentTheme === 'dark';
@@ -334,7 +337,7 @@
             contact: "Контакты",
             mail_me: "Написать мне",
             greeting: "Доброе утро! Добрый день! Добрый вечер! Меня зовут Даниил",
-            greeting_info: "Это мой CV-сайт, написанный для помощи в знакомстве в более удобном и интерактивном формате. «Питоню на программировании» и изучаю высшую математику. Моя цель — научиться делать то, что никогда не сможет делать ИИ (и быть полезным роботам при восстании машин)",
+            greeting_info: "Это мой CV-сайт, написанный для помощи в знакомстве в более удобном и интерактивном формате. «Питоню на программировании» и изучаю высшую математику. Моя цель — научиться делать то, что никогда не сможет делать ИИ (чтобы быть полезным при восстании машин)",
             about_info: "Я студент ПМИ ФКН ВШЭ (GPA: 8.75, перцентиль: 10.17). Так же успешно учусь в «Академия Бэкенда» T-Банка, где осваиваю навыки, необходимые для профессиональной разработки на Python. Участвую в командном пет-проекте «LISA» (подробнее в разделе проекты). В свободное время читаю научную и художественную литературу, играю на гитаре и пианино, посещаю интересные места.",
             hse_university: "Национальный исследовательский университет «Высшая школа экономики», Москва",
             hse_grad_date: "Бакалавриат, 2023-2027",
@@ -344,7 +347,7 @@
             school_grad_date: "Среднее общее образование, 2020-2023",
             LISA_info: "Чат-бот, предоставляющий пользователям безопасный доступ к ресурсам сети Интернет через VPN. Бот разработан для автоматизации взаимодействия с VPN-сервисом, предоставления ключей доступа, управления подписками и анализа статистики использования. Взаимодействие осуществляется через мессенджер Telegram.",
             maze_generator_info: "Консольное приложение для генерации лабиринтов и поиска пути в них. Программа поддерживает генерацию лабиринтов различных размеров и сложностей, а также визуализацию пути в консоли с использованием символьной графики.",
-            log_analyzer_info: "Консольная утилита для анализа и подсчета статистики по NGINX лог-файлам",
+            log_analyzer_info: "Консольная утилита для анализа и подсчета статистики по NGINX лог-файлам.",
             image_processor_info: "Создание консольного приложения для применения фильтров различного типа (размытие по Гауссу, обрезание, негатив) к изображению.",
             stellayger_info: "Создание десктопной игры на Unity, позволяющей запоминать созвездия неба. Управляя ракетой, необходимо облететь все звезды и построить необходимую фигуру.",
             skills: "Технические навыки",

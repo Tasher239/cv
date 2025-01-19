@@ -23,7 +23,7 @@ body {
 }
 
 .dark-bg {
-  background-color: #102D69;
+  background-color: #123478;
   color: #fff;
 }
 
@@ -241,4 +241,67 @@ h1.greeting-text {
 
 .language-toggle a:hover {
     text-decoration: underline;
+}
+
+/* Контейнер для переключателя */
+.theme-toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Уменьшаем расстояние между элементами */
+}
+
+/* Стилизация переключателя */
+.slider {
+    position: relative;
+    display: inline-block;
+    width: 40px; /* Уменьшаем ширину */
+    height: 20px; /* Уменьшаем высоту */
+}
+
+/* Скрываем стандартный чекбокс */
+.slider input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Фон переключателя */
+.slider .slider-background {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc; /* Цвет фона по умолчанию */
+    transition: background-color 0.3s ease;
+    border-radius: 20px; /* Закругляем углы */
+}
+
+/* Круглый бегунок */
+.slider .slider-background:before {
+    position: absolute;
+    content: "";
+    height: 16px; /* Уменьшаем размер бегунка */
+    width: 16px; /* Уменьшаем размер бегунка */
+    left: 2px; /* Сдвигаем ближе к краю */
+    bottom: 2px; /* Сдвигаем ближе к краю */
+    background-color: white;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+}
+
+/* Анимация при переключении */
+.slider input:checked + .slider-background {
+    background-color: #FFD700; /* Желтый цвет фона */
+}
+
+.slider input:checked + .slider-background:before {
+    transform: translateX(20px); /* Сдвигаем бегунок вправо */
+}
+
+/* Метки */
+.slider-label {
+    font-size: 12px; /* Уменьшаем размер текста */
+    color: #333;
 }
