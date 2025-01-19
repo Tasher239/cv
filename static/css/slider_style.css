@@ -7,9 +7,9 @@
 .slider {
     -webkit-appearance: none;
     appearance: none;
-    width: 60px;
-    height: 30px;
-    border-radius: 30px;
+    width: 40px; /* Уменьшили ширину */
+    height: 21px; /* Уменьшили высоту */
+    border-radius: 20px; /* Закругление пропорционально высоте */
     background: #ccc;
     outline: none;
     transition: background 0.3s;
@@ -20,36 +20,31 @@
 .slider::before {
     content: "";
     position: absolute;
-    width: 24px;
-    height: 24px;
+    width: 16px; /* Уменьшили размер бегунка */
+    height: 16px; /* Уменьшили размер бегунка */
     border-radius: 50%;
     background-color: #000;
     top: 50%;
-    left: 3px;
+    left: 2px; /* Сдвинули ближе к краю */
     transform: translateY(-50%);
     transition: left 0.3s;
 }
 
 .slider:checked {
-    background: #4CAF50;
+    background: #FFD700; /* Желтый цвет фона */
 }
 
 .slider:checked::before {
-    left: 33px;
+    left: 22px; /* Сдвинули бегунок вправо */
 }
 
 .slider-label {
-    font-size: 20px;
-    color: #333;
+    font-size: 14px; /* Уменьшили размер текста */
+    color: #ffffff;
 }
 
 .theme-toggle-container {
     display: flex;
     align-items: center;
     gap: 5px;
-}
-
-.slider-label {
-    color: #ffffff;
-    font-size: 14px;
 }
