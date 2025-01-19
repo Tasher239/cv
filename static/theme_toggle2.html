@@ -1,0 +1,16 @@
+<div class="theme-toggle-container">
+    <span class="slider-label">Light</span>
+    <input type="checkbox" class="slider" id="theme_toggle">
+    <span class="slider-label">Dark</span>
+</div>
+
+<script>
+    const themeToggle = document.getElementById('theme_toggle');
+
+    themeToggle.checked = currentTheme === 'dark';
+
+    themeToggle.addEventListener('change', () => {
+        const newTheme = themeToggle.checked ? 'dark' : 'light';
+        applyTheme(newTheme);
+    });
+</script>
